@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="Keywords" content="邦宁云播,邦宁云视频,vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析">
+    <meta name="Description" content="全网最全的视频资源 更新最快 免费在线播放.最新资源观看,哪里可以看最新的电影电视剧，">
+    <meta name="keywords" />
+    <script>
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+            alert("抱歉！本网站不兼容IE浏览器，建议更换现代浏览器使用，比如Chrome浏览器等");
+        }
+        if (location.href.toLowerCase().indexOf("ihelpy") != -1) {
+            alert("本站已启用新域名video.isYour.Love,请修改收藏页面，即将跳转...");
+            location.href = "https://video.isyour.love";
+        } else {
+            //启用https
+            if (location.href.toLowerCase().indexOf("https") != 0 && location.href.toLowerCase().indexOf("localhost") == -1 && location.href.search(/[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/) == -1) {
+                location.href = "https" + location.href.substring(4)
+            }
+        }
+
+
+    </script>
+    <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/js/bootstrap.bundle.js"></script>
+
+    <script src="https://cdn.staticfile.org/vue/3.0.11/vue.global.js"></script>
+    <!--引用bootstrap图标库css-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css" />
+
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/4.1.1/animate.min.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Js/Tools.js"></script>
+    <style>
+        body {
+            background-image: url(https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Image/bg.png);
+        }
+    </style>
+    
+    <style>
+        .videoBody {
+            position: relative;
+            background-color: black;
+            margin: 10px 0px 0px 0px;
+            height: 230px;
+            overflow: hidden;
+        }
+
+        .tip {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 30%;
+            z-index: 999999;
+            pointer-events: none;
+        }
+
+        .tiptxt {
+            padding: 10px;
+            background-color: black;
+            border-radius: 5px;
+            opacity: 0.8;
+            color: white;
+            cursor: pointer;
+            pointer-events: all;
+        }
+
+        .videoBodyButton {
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            overflow: hidden;
+            padding-top: 14px;
+        }
+
+        .col-sm-4 {
+            padding: 3px;
+        }
+
+        .card-body {
+            padding:0px;
+        }
+
+        html, body, .container-fluid {
+            height:100%;
+            padding:0px;
+            margin:0px;
+        }
+    </style>
+
+
+    <title>邦宁云播 在线播放-全网VIP视频极速解析 - ⎛⎝邦宁云播⎠⎞</title>
+    
+    
+    <!--谷歌AD-->
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9882613937145097"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+
+
+<div class="container-fluid" id="app1">
+    <nav class="nav">
+        <a class="nav-link active" href="/" style="font-size:19px;"><span class="glyphicon glyphicon-cloud"></span>邦宁云播</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">选择一个正常加载的视频继续播放...</a>
+    </nav>
+    <iframe sandbox='allow-scripts allow-same-origin' frameborder="0" border="0" scrolling="no" allowfullscreen="true"
+            webkitallowfullscreen="true" mozallowfullscreen="true" allowtransparency="true" style="width:100%;height:90%;"
+            :src="'/Player/GetPlayer_JxMore?url=' + url"></iframe>
+    <hr />
+    <div role="alert" class="alert alert-danger text-center">该网站资源均来自互联网,仅供学习交流使用，请勿用于商业用途</div>
+    <p class="text-center">
+        Mail:
+        <a href="mailto:who@isYour.love" target="_blank">who@isYour.love</a>
+        &nbsp;&nbsp;
+        QQ:
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=2847046608&site=qq&menu=yes" target="_blank">2847046608</a>
+        &nbsp;&nbsp;
+        <a href="/Html/playerHelp.html" target="_blank">本站数据免费开放</a>
+        &nbsp;&nbsp;
+        <span class="glyphicon glyphicon-heart-empty"></span>:
+        <a href="/Html/beg.html" target="_blank">
+            捐助
+        </a>
+    </p>
+</div>
+
+    
+    
+
+    <script type="text/javascript">
+        var app = Vue.createApp({
+            data() {
+                return {
+                    url: getQueryVariable("id")
+                };
+            },
+            methods: {
+                changeOne(thisid) {
+                    movieSize = function () { };//删除此方法 不再调整高度
+                    $(".lineObj").each(function (a, itemobj) {
+                        if ($(itemobj).attr("id") != thisid) {
+                            $(itemobj).remove();
+                        }
+                    });
+                    $(".card-body").attr("style", "position: fixed;z-index:999");
+                    $(".tip").hide();
+                    $(".card-body").animate({
+                        top: 0,
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
+                    });
+                }
+            }
+        }).mount("#app1");
+
+
+    </script>
+
+
+    
+    <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "分享全网VIP视频会员领取观看:video.isyour.love", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "24" }, "share": { "bdSize": 16 } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'https://cdn.jsdelivr.net/gh/yunluo/GitCafeApi/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+
+
+    <!-- 谷歌统计Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154955960-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154955960-1');
+    </script>
+
+    <div style="display:none;">
+        <!--cnzz统计-->
+        <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1279848754&web_id=1279848754"></script>
+    </div>
+
+
+</body>
+</html>

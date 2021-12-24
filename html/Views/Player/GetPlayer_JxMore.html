@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="Keywords" content="邦宁云播,邦宁云视频,vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析">
+    <meta name="Description" content="全网最全的视频资源 更新最快 免费在线播放.最新资源观看,哪里可以看最新的电影电视剧，">
+    <meta name="keywords" />
+    <script>
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+            alert("抱歉！本网站不兼容IE浏览器，建议更换现代浏览器使用，比如Chrome浏览器等");
+        }
+        if (location.href.toLowerCase().indexOf("ihelpy") != -1) {
+            alert("本站已启用新域名video.isYour.Love,请修改收藏页面，即将跳转...");
+            location.href = "https://video.isyour.love";
+        } else {
+            //启用https
+            if (location.href.toLowerCase().indexOf("https") != 0 && location.href.toLowerCase().indexOf("localhost") == -1 && location.href.search(/[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/) == -1) {
+                location.href = "https" + location.href.substring(4)
+            }
+        }
+
+
+    </script>
+    <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/js/bootstrap.bundle.js"></script>
+
+    <script src="https://cdn.staticfile.org/vue/3.0.11/vue.global.js"></script>
+    <!--引用bootstrap图标库css-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css" />
+
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/4.1.1/animate.min.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Js/Tools.js"></script>
+    <style>
+        body {
+            background-image: url(https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Image/bg.png);
+        }
+    </style>
+    
+    <style>
+        .videoBody {
+            position: relative;
+            background-color: black;
+            margin: 10px 0px 0px 0px;
+            height: 230px;
+            overflow: hidden;
+        }
+
+        .tip {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 10%;
+            z-index: 999999;
+            pointer-events: none;
+        }
+
+        .tiptxt {
+            font-size:14px;
+            padding: 6px;
+            background-color: red;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            pointer-events: all;
+            box-shadow:0px 0px 3px 1px white;
+        }
+
+        .videoBodyButton {
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            overflow: hidden;
+            padding-top: 14px;
+        }
+
+        .col-sm-4 {
+            padding: 3px;
+        }
+
+        .card-body {
+            padding: 0px;
+        }
+
+        html, body, .container-fluid, #app1, .row, .card {
+            width: 100%;
+            height: 100%;
+        }
+
+        .h50 {
+            height:50%;
+        }
+        .h33 {
+            height: 33%;
+        }
+    </style>
+
+
+    <title>邦宁云播 在线播放-全网VIP视频极速解析 - ⎛⎝邦宁云播⎠⎞</title>
+    
+    
+    <!--谷歌AD-->
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9882613937145097"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+
+
+<div class="container-fluid" style="padding:0px;">
+    <div id="app1">
+        <div class="row" style="margin:0px;">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 lineObj" v-for="item in lineList" :id="item.lineUrl" style="margin-bottom:0px;padding:0px;">
+                <div class="card text-center">
+                    <div class="card-body">
+                        
+                        <iframe sandbox="allow-forms allow-scripts allow-same-origin" frameborder="0" border="0" scrolling="no" allowfullscreen="true"
+                                webkitallowfullscreen="true" mozallowfullscreen="true" allowtransparency="true" style="width:100%;height:100%;"
+                                :src="item.lineUrl + url"></iframe>
+                    </div>
+                    <div class="tip">
+                        <span class="tiptxt" v-on:click="changeOne(item.lineUrl)">
+                            <ion-icon name="caret-up-sharp"></ion-icon>选择这个视频继续播放
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+    <script type="text/javascript">
+
+        var _0xodo = 'jsjiami.com.v6', _0xodo_ = ['‮_0xodo'], _0x1852 = [_0xodo, 'PifDnjnCgMO4wowvPcOfw7FrUxRrdDPDvW0pw6nCrDXDij3Ci8Ov', 'BwRsTx3CjcOuXA==', 'w5LDvsKFPQ==', 'wpnDvcK2LsOG', 'w4RRw4weeg==', 'WsOnXsOHw78=', 'UHzCsBo7', 'wp9Ww7bDosOC', 'WcKDEcOXw5I=', 'woBWMsO4wpw=', 'dMKLGcO3', 'wrfCl8O7w64s', 'fgJaw5tc', 'wo7Co8Klwo0o', 'UD/Dgg55', 'EcOTw5EM', 'EcO7wrtAw7XCqcOCOnnDrg==', 'IyfDmD7CgA==', 'H8OCVMO7woQ=', 'w4jCuMO8E8KiaMKXw44u', 'S8KTw5DDmDFbwqxKwo3CqBwkwqFsw77CgnPCqMO4w44VDcKDwpE9FixPw49CGW4NQBwnw5Nzwo/Du108Z17DucKlwoYSwo93', 'wrNhwrt+wqHDsBZuKxgUdVHCuj7Cgxc4wrN3wp7DjMKwccKxwo7Cpz/CgGRSYmNvX1fCmxc5', 'wrQWwpzDhwYXwr7ClsOwUh4owrvDg8O2ZMOjwpfCuG/CkQ==', 'T8OkwoLDpcOA', 'H1BLwqLDqmAdwrjCmAxAMsOZw4YTw6/DvcKSwobCnsKJb8OU', 'wrnDnsOaw6bDjQ==', 'PsK1AnHDuQ==', 'w5F9w5Y5w5hUd8KWYsKVEMK0VTxYw7LCrRA5QT3CqyMlw5DDo1Y5WyvDvg==', 'eAJ/VRw=', 'N8OeRRJW', 'w5jCvsOgHsKz', 'GjsyjEieamiB.com.uPvPrp6MQpUbR==']; if (function (_0x1d7a1b, _0x2c1d21, _0x193e53) { function _0x186db8(_0x376df3, _0x583db8, _0x24263d, _0x2832ba, _0x413ae4, _0x572669) { _0x583db8 = _0x583db8 >> 0x8, _0x413ae4 = 'po'; var _0x4230ea = 'shift', _0x6d32bd = 'push', _0x572669 = '‮'; if (_0x583db8 < _0x376df3) { while (--_0x376df3) { _0x2832ba = _0x1d7a1b[_0x4230ea](); if (_0x583db8 === _0x376df3 && _0x572669 === '‮' && _0x572669['length'] === 0x1) { _0x583db8 = _0x2832ba, _0x24263d = _0x1d7a1b[_0x413ae4 + 'p'](); } else if (_0x583db8 && _0x24263d['replace'](/[GyEeBuPPrpMQpUbR=]/g, '') === _0x583db8) { _0x1d7a1b[_0x6d32bd](_0x2832ba); } } _0x1d7a1b[_0x6d32bd](_0x1d7a1b[_0x4230ea]()); } return 0xc526d; }; return _0x186db8(++_0x2c1d21, _0x193e53) >> _0x2c1d21 ^ _0x193e53; }(_0x1852, 0xec, 0xec00), _0x1852) { _0xodo_ = _0x1852['length'] ^ 0xec; }; function _0x13fa(_0x55fe45, _0x322d39) { _0x55fe45 = ~~'0x'['concat'](_0x55fe45['slice'](0x1)); var _0x23e081 = _0x1852[_0x55fe45]; if (_0x13fa['QuboBz'] === undefined) { (function () { var _0x59cf2e = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this; var _0xf9c7a6 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='; _0x59cf2e['atob'] || (_0x59cf2e['atob'] = function (_0x5f331a) { var _0x2d2d20 = String(_0x5f331a)['replace'](/=+$/, ''); for (var _0x2541e8 = 0x0, _0x5e488b, _0x29f2d3, _0x38240d = 0x0, _0x427357 = ''; _0x29f2d3 = _0x2d2d20['charAt'](_0x38240d++); ~_0x29f2d3 && (_0x5e488b = _0x2541e8 % 0x4 ? _0x5e488b * 0x40 + _0x29f2d3 : _0x29f2d3, _0x2541e8++ % 0x4) ? _0x427357 += String['fromCharCode'](0xff & _0x5e488b >> (-0x2 * _0x2541e8 & 0x6)) : 0x0) { _0x29f2d3 = _0xf9c7a6['indexOf'](_0x29f2d3); } return _0x427357; }); }()); function _0x1a6e05(_0x5add92, _0x322d39) { var _0x1b178b = [], _0x1e55c9 = 0x0, _0x16aae8, _0x1d2f5a = '', _0x660b0e = ''; _0x5add92 = atob(_0x5add92); for (var _0x2bc79b = 0x0, _0x2ccc50 = _0x5add92['length']; _0x2bc79b < _0x2ccc50; _0x2bc79b++) { _0x660b0e += '%' + ('00' + _0x5add92['charCodeAt'](_0x2bc79b)['toString'](0x10))['slice'](-0x2); } _0x5add92 = decodeURIComponent(_0x660b0e); for (var _0x1bc8cb = 0x0; _0x1bc8cb < 0x100; _0x1bc8cb++) { _0x1b178b[_0x1bc8cb] = _0x1bc8cb; } for (_0x1bc8cb = 0x0; _0x1bc8cb < 0x100; _0x1bc8cb++) { _0x1e55c9 = (_0x1e55c9 + _0x1b178b[_0x1bc8cb] + _0x322d39['charCodeAt'](_0x1bc8cb % _0x322d39['length'])) % 0x100; _0x16aae8 = _0x1b178b[_0x1bc8cb]; _0x1b178b[_0x1bc8cb] = _0x1b178b[_0x1e55c9]; _0x1b178b[_0x1e55c9] = _0x16aae8; } _0x1bc8cb = 0x0; _0x1e55c9 = 0x0; for (var _0x54911e = 0x0; _0x54911e < _0x5add92['length']; _0x54911e++) { _0x1bc8cb = (_0x1bc8cb + 0x1) % 0x100; _0x1e55c9 = (_0x1e55c9 + _0x1b178b[_0x1bc8cb]) % 0x100; _0x16aae8 = _0x1b178b[_0x1bc8cb]; _0x1b178b[_0x1bc8cb] = _0x1b178b[_0x1e55c9]; _0x1b178b[_0x1e55c9] = _0x16aae8; _0x1d2f5a += String['fromCharCode'](_0x5add92['charCodeAt'](_0x54911e) ^ _0x1b178b[(_0x1b178b[_0x1bc8cb] + _0x1b178b[_0x1e55c9]) % 0x100]); } return _0x1d2f5a; } _0x13fa['uXhgqc'] = _0x1a6e05; _0x13fa['xinNlF'] = {}; _0x13fa['QuboBz'] = !![]; } var _0x12ba06 = _0x13fa['xinNlF'][_0x55fe45]; if (_0x12ba06 === undefined) { if (_0x13fa['cHPnmE'] === undefined) { _0x13fa['cHPnmE'] = !![]; } _0x23e081 = _0x13fa['uXhgqc'](_0x23e081, _0x322d39); _0x13fa['xinNlF'][_0x55fe45] = _0x23e081; } else { _0x23e081 = _0x12ba06; } return _0x23e081; }; var app = Vue[_0x13fa('‮0', 'iuBr')]({ 'data'() { var _0x2406f3 = { 'BuVrM': _0x13fa('‫1', 'Fnh2'), 'CPONC': _0x13fa('‮2', 'aVWR'), 'AxRFh': 'https://z1.m1907.cn/?jx=', 'vPKSS': _0x13fa('‮3', 'R&ws'), 'Qjztd': function (_0x4f359c, _0x138bd8) { return _0x4f359c(_0x138bd8); }, 'mVSua': 'url' }; return { 'lineList': [{ 'lineUrl': _0x2406f3[_0x13fa('‫4', '7yFf')] }, { 'lineUrl': _0x2406f3['CPONC'] }, { 'lineUrl': _0x13fa('‫5', 'fE!Y') }, { 'lineUrl': _0x2406f3[_0x13fa('‮6', '0GLP')] }, { 'lineUrl': _0x2406f3[_0x13fa('‮7', '(yi$')] }, { 'lineUrl': _0x13fa('‫8', 'T3za') }], 'url': _0x2406f3[_0x13fa('‫9', 'P3cU')](getQueryVariable, _0x2406f3[_0x13fa('‫a', 'i%V5')]) }; }, 'methods': { 'changeOne'(_0x428269) { var _0x137cc3 = { 'ewZcG': '2|3|1|0|4|5', 'fDzLJ': function (_0x548328, _0x150c13) { return _0x548328(_0x150c13); }, 'qyGLq': '.card-body', 'LeAaI': _0x13fa('‮b', 'iuBr'), 'HikHd': _0x13fa('‮c', 'OqtP'), 'sgHfH': _0x13fa('‮d', 'P3cU'), 'icVuI': function (_0x5059de, _0x483607) { return _0x5059de(_0x483607); }, 'wnvSf': _0x13fa('‮e', 'kqxD') }; var _0x370695 = _0x137cc3[_0x13fa('‫f', 'kqxD')][_0x13fa('‮10', 'Z6Ef')]('|'), _0x508e0c = 0x0; while (!![]) { switch (_0x370695[_0x508e0c++]) { case '0': _0x137cc3[_0x13fa('‮11', 'M(z!')]($, _0x137cc3[_0x13fa('‮12', 'Nz9)')])['attr'](_0x137cc3[_0x13fa('‫13', '*2OC')], _0x137cc3[_0x13fa('‮14', '25Dv')]); continue; case '1': $(_0x137cc3[_0x13fa('‮15', 'O(#6')])[_0x13fa('‫16', '25Dv')](function (_0x1781f5, _0x4ef23d) { if (_0x504e51[_0x13fa('‮17', 'kuDH')]($, _0x4ef23d)['attr']('id') != _0x428269) { _0x504e51[_0x13fa('‮18', 'ZYgb')]($, _0x4ef23d)['remove'](); } }); continue; case '2': var _0x504e51 = { 'VacPW': function (_0x34cbbf, _0x41161a) { return _0x137cc3['fDzLJ'](_0x34cbbf, _0x41161a); }, 'SypnV': function (_0x50f832, _0x3f6fc2) { return _0x50f832(_0x3f6fc2); } }; continue; case '3': movieSize = function () { }; continue; case '4': _0x137cc3[_0x13fa('‮19', 'iwxS')]($, _0x137cc3[_0x13fa('‫1a', 'ibib')])[_0x13fa('‫1b', 'R]%*')](); continue; case '5': $(_0x13fa('‫1c', 'Fiqn'))['animate']({ 'top': 0x0, 'bottom': 0x0, 'left': 0x0, 'right': 0x0 }); continue; }break; } } } })[_0x13fa('‮1d', 'OqtP')](_0x13fa('‫1e', 'M(z!'));; _0xodo = 'jsjiami.com.v6';
+        
+        //手机上隐藏按钮
+        function onresize2() {
+            if ($(window).width() < 576) {//字幕按钮
+                $(".lineObj").addClass("h33");
+                $(".lineObj").removeClass("h50");
+            } else {
+                $(".lineObj").addClass("h50");
+                $(".lineObj").removeClass("h33");
+            }
+        }
+        onresize2();
+        window.onresize = function () {
+            onresize2();
+        }
+    </script>
+
+
+    
+    <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "分享全网VIP视频会员领取观看:video.isyour.love", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "24" }, "share": { "bdSize": 16 } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'https://cdn.jsdelivr.net/gh/yunluo/GitCafeApi/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+
+
+    <!-- 谷歌统计Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154955960-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154955960-1');
+    </script>
+
+    <div style="display:none;">
+        <!--cnzz统计-->
+        <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1279848754&web_id=1279848754"></script>
+    </div>
+
+
+</body>
+</html>
