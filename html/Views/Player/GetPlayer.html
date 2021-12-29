@@ -300,11 +300,11 @@
     <div class="row fullHeight" style="width: 100%;margin: 0px;">
         <div class="col-xs-1 col-sm-2 col-md-2 col-lg-3"></div>
         <div class="col-xs-11 col-sm-10 col-md-10 col-lg-9 fullHeight" style="position:relative;">
-            <div id="menu" style="font-size: 14px; pointer-events:all; position:absolute;left:0;right:0;top:2%;bottom:2%;border-radius:10px;z-index:3;background-color: rgb(249, 250, 251);color:#a9a9a9;margin:0px 6px;">
-                <span id="menuClose" onclick='$("#menu").animateCss("fadeOutRightBig");' style="position:absolute;right:20px;top:20px;z-index:5;font-size:17px;cursor: pointer;color: rgb(92, 92, 92);">
+            <div id="menu" style="font-size: 14px; pointer-events:all; position:absolute;left:0;right:0;top:2px;bottom:2px;border-radius:10px;z-index:3;background-color: rgb(249, 250, 251);color:#a9a9a9;margin:0px 2px;">
+                <span id="menuClose" onclick='$("#menu").animateCss("fadeOutRightBig");' style="position:absolute;right:20px;top:7px;z-index:5;font-size:17px;cursor: pointer;color: rgb(92, 92, 92);">
                     <i class="bi bi-x" style="font-size: 1.5rem;"></i>
                 </span>
-                <div class="v-cloak" id="realY" style="background-image: url(https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Image/bg.png); background-attachment: local; padding-left: 10px; position: absolute; left: 0px; right: 1px; top: 10px; bottom: 20px; overflow-y: auto; padding-right: 10px;">
+                <div class="v-cloak" id="realY" style="background-image: url(https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Image/bg.png); background-attachment: local; padding-left:7px; position: absolute; left: 0px; right: 1px; top: 3px; border-radius: 10px; bottom: 20px; overflow-y: auto; padding-right: 5px;">
                     <div>
                         <div style="margin-top: 5px; color: black; font-size: 18px;float: left; margin-right: 10px;">
                             <i :style="{'color':showAll ? 'red':''}" v-on:click="showAll= !showAll;" class="bi bi-bullseye" style="font-size:1.2rem;"></i>
@@ -321,19 +321,19 @@
 
                     
                     <div class="input-group input-group-sm" style=" border: 1px solid #1e7e34; border-radius: 5px;">
-                        <input v-model="searchCodeUser" v- type="text" class="form-control" autocomplete="off" placeholder="请输入 影片名称 或 播放地址 搜索结果由互联网自动聚合生成,请勿相信视频内容中的广告" name="id" v-on:keyup.enter="userInputSearch(searchCodeUser)" />
+                        <input style="border: 0px;" v-model="searchCodeUser" type="text" class="form-control" autocomplete="off" placeholder="请输入 影片名称 或 播放地址 搜索结果由互联网自动聚合生成,请勿相信视频内容中的广告" name="id" v-on:keyup.enter="userInputSearch(searchCodeUser)" />
                         <span class="input-group-btn">
-                            <button class="btn btn-success" style="font-size: 14px; margin: -1px !important; background-color: #5cb85c; line-height: 1.42857143; border: 1px solid transparent; color: white; height: 104%;" onclick="app.userInputSearch(app.searchCodeUser); return false;">搜 索</button>
+                            <button class="btn btn-success" style="font-size: 14px; margin: -1px !important; background-color: #5cb85c; line-height: 1.42857143; border: 1px solid transparent; color: white;" onclick="app.userInputSearch(app.searchCodeUser); return false;">搜 索</button>
                         </span>
                     </div>
                     <div v-show="searchCodeUserList.length > 0" style="padding: 5px 5px 10px 5px; background-color: white; position: absolute; z-index: 4; left: 10px; right: 10px; color: black; border: 1px solid #1e7e34; border-top: 0px; border-radius: 0px 0px 5px 5px; overflow: hidden; ">
                         <div v-for="i in searchCodeUserList" v-on:click="userInputSearch(i)" style=" font-size: 1rem; margin: 4px;" class="badge badge-dark">{{i}}</div>
                     </div>
                     
-                <div class="loading" style="z-index: 9999; position: absolute; top: 55px; bottom: 0px; left: 0px; right: 0px; color: #1e7e34; background-color: white; padding-top: 70px; padding-left: 10px; font-size: 1.5rem; ">
-                    <p><i style="font-size: 2rem; color: black;" class="bi bi-hourglass"></i>请稍等</p>
-                    <p>正在加载播放器...</p>
-                </div>
+                    <div class="loading" style="z-index: 9999; position: absolute; top: 55px; bottom: 0px; left: 0px; right: 0px; color: #1e7e34; background-color: white; padding-top: 70px; padding-left: 10px; font-size: 1.5rem; ">
+                        <p><i style="font-size: 2rem; color: black;" class="bi bi-hourglass"></i>请稍等</p>
+                        <p>正在加载播放器...</p>
+                    </div>
                     <div style="height: 120px;">
                         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9882613937145097"
                                 crossorigin="anonymous"></script>
