@@ -433,16 +433,16 @@
 
 
 <div id="JxDiv" style="z-index: 999; position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; display: none; background-color: black;">
-    <div style="padding: 5px; background: black; color: white;">
-        <div v-on:click="back()" style="background-color: red;  float: left; ">
+    <div style="background: black; color: white;">
+        <div v-on:click="back()" style="background-color: red; position:absolute;z-index:22;padding:7px;">
             返回剧集
         </div>
-        <div style="text-align:center;">{{title}}</div>
+        <div style="text-align: center; padding: 7px 0px; white-space: nowrap;overflow:hidden;">{{title}}</div>
     </div>
     <div id="JxDiv_loading" style="pointer-events:none;z-index: 2; position: fixed; left: 0px; top: 20%; right: 0px; text-align: center; color: white; font-size: 1.4rem; ">
         <span class="badge badge-success">正在加载播放器,请稍等...</span>
     </div>
-    <div style=" width: 100%; /* height: 100%; */ background-color: rgb(69, 69, 69); position: fixed; top: 35px; bottom: 0; left: 0px; right: 0;">
+    <div style=" width: 100%;background-color: rgb(69, 69, 69); position: fixed; top: 38px; bottom: 0; left: 0px; right: 0;">
         <iframe onload="$('#JxDiv_loading').hide()" sandbox='allow-scripts allow-same-origin' frameborder="0" border="0" scrolling="no" allowfullscreen="true"
                 webkitallowfullscreen="true" mozallowfullscreen="true" allowtransparency="true" style="width:100%;height:100%;background-color:#454545;"
                 :src="url"></iframe>
