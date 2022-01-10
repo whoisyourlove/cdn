@@ -212,10 +212,18 @@
             color: black;
         }
 
-        /*正常的未被访问过的链接*/
-        /* .nava:link {
-            background-color: transparent !important;
-        }*/
+        .pageButton {
+            border-radius: 4px !important;
+            padding: 3px !important;
+            margin-left: 5px !important;
+            padding: 5px !important;
+            color: green;
+            border: 1px solid;
+        }
+        .pageButtonEnter {
+            background-color: green !important;
+            color: white !important;
+        }
     </style>
     <style>
         .vjs-control-bar {
@@ -415,8 +423,11 @@
 
                         </div>
                     </div>
-                    <div v-show="searchList.length > 0" style="font-size: 10px; background-color: #e1e1e1; padding: 4px; border-radius: 5px; color: #28a745; ">
-                        --搜索结果只展示前30条,排名不分先后
+                    <div v-show="searchList.length > 0" style=" font-weight: bolder; font-size: 12px; background-color: #e1e1e1; padding: 4px; border-radius: 5px; color: #28a745; ">
+                        当前页:
+                        <button class="pageButton" v-bind:class="nowPage == 1? 'pageButtonEnter' :''" v-on:click="changePage(1)">第1页</button>
+                        <button class="pageButton" v-bind:class="nowPage == 2? 'pageButtonEnter' :''" v-on:click="changePage(2)">第2页</button>
+                        <button class="pageButton" v-bind:class="nowPage == 3? 'pageButtonEnter' :''" v-on:click="changePage(3)">第3页</button>
                     </div>
                     <div style="clear: both;"></div>
                     <div>
@@ -529,7 +540,7 @@
     <div v-on:click="back()" style="z-index:2;position:fixed;left:0px;top:5%;background-color:red;padding:10px;border-radius:0px 30px 30px 0px;color:white;">
         返回剧集
     </div>
-    <div id="JxDiv_loading" style="pointer-events:none;z-index: 2; position: fixed; left: 0px; top: 20%; right: 0px; text-align: center; color: white; font-size: 1.4rem; ">
+    <div onclick="$(this).hide()" id="JxDiv_loading" style="z-index: 2; position: fixed; left: 0px; top: 20%; right: 0px; text-align: center; color: white; font-size: 1.4rem; ">
         <span class="badge badge-success">正在加载播放器,请稍等...</span>
     </div>
     <iframe onload="$('#JxDiv_loading').hide()" sandbox='allow-scripts allow-same-origin' frameborder="0" border="0" scrolling="no" allowfullscreen="true"
@@ -591,10 +602,10 @@
     <script src="https://cdn.staticfile.org/video.js/7.12.1/lang/zh-CN.min.js"></script>
 
     
-    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn@21122402/videoSite/Js/MyPlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn@22011101/videoSite/Js/MyPlayer.min.js"></script>
 
 
-    
+
 
 
 
