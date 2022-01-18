@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta name="referrer" content="none">
+    <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="Keywords" content="邦宁云播,邦宁云视频,vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析">
     <meta name="Description" content="全网最全的视频资源 更新最快 免费在线播放.最新资源观看,哪里可以看最新的电影电视剧，">
@@ -33,7 +33,6 @@
     <!--引用bootstrap图标库css-->
     <link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css" />
 
-    
     <link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/4.1.1/animate.min.css">
 
     <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Js/Tools.js"></script>
@@ -264,12 +263,6 @@
 
 
     <title>邦宁云播播放器 - ⎛⎝邦宁云播⎠⎞</title>
-    
-    
-    <!--谷歌AD-->
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9882613937145097"
-            crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -344,17 +337,17 @@
                         <p>正在加载播放器...</p>
                     </div>
                     <div style="height: 120px;">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9882613937145097"
-                                crossorigin="anonymous"></script>
+                        <div v-is="'script'" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9882613937145097"
+                                crossorigin="anonymous"></div>
                         <ins class="adsbygoogle"
                              style="display:block;height:120px;"
                              data-ad-format="fluid"
                              data-ad-layout-key="-fl+5z+3v-d0+94"
                              data-ad-client="ca-pub-9882613937145097"
                              data-ad-slot="9497300006"></ins>
-                        <script>
+                        <div v-is="'script'">
                             (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
+                        </div>
                     </div>
 
                     <iframe v-if="adadress"
@@ -414,7 +407,7 @@
                                         <i class="bi bi-arrow-90deg-down"></i>
                                         <span>点击查看共:{{items.Data.length}}集</span>
                                     </div>
-                                    <div v-on:contextmenu.stop='newWindow(items.Name + "-" + items2.N,items2.S,items.Player)' v-on:click="clickOne(items,ind2)" v-show="items.showChild" v-for="(items2,ind2) in items.Data" class="searchItems" v-bind:class="{'nowSelectItem': nowSelectItem.obj == items &&  nowSelectItem.ind == ind2}">
+                                    <div  v-show="items.showChild" v-on:contextmenu.stop='newWindow(items.Name + "-" + items2.N,items2.S,items.Player)' v-on:click="clickOne(items,ind2)" v-for="(items2,ind2) in items.Data" class="searchItems" v-bind:class="{'nowSelectItem': nowSelectItem.obj == items &&  nowSelectItem.ind == ind2}">
                                         <span>{{items2.N || "正片"}}</span>
                                     </div>
                                 </div>
@@ -431,17 +424,17 @@
                     </div>
                     <div style="clear: both;"></div>
                     <div>
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9882613937145097"
-                                crossorigin="anonymous"></script>
+                        <div v-is="'script'" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9882613937145097"
+                                crossorigin="anonymous"></div>
                         <ins class="adsbygoogle"
                              style="display:block;height:120px;"
                              data-ad-format="fluid"
                              data-ad-layout-key="-fb+5w+4e-db+86"
                              data-ad-client="ca-pub-9882613937145097"
                              data-ad-slot="8184218337"></ins>
-                        <script>
+                        <div v-is="'script'">
                             (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
+                        </div>
                     </div>
                     <hr />
                     <ul class="nav nav-tabs" style="border-color: #5cb85c;">
@@ -602,7 +595,7 @@
     <script src="https://cdn.staticfile.org/video.js/7.12.1/lang/zh-CN.min.js"></script>
 
     
-    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn@22011101/videoSite/Js/MyPlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn@22011901/videoSite/Js/MyPlayer.min.js"></script>
 
 
 
@@ -610,7 +603,7 @@
 
 
     
-    <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "分享全网VIP视频会员领取观看:video.isyour.love", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "24" }, "share": { "bdSize": 16 } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'https://cdn.jsdelivr.net/gh/yunluo/GitCafeApi/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+    
 
 
     <!-- 谷歌统计Google Analytics -->
@@ -627,7 +620,10 @@
         <!--cnzz统计-->
         <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1279848754&web_id=1279848754"></script>
     </div>
-
+    <!--谷歌AD-->
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9882613937145097"
+            crossorigin="anonymous"></script>
 
 </body>
 </html>
