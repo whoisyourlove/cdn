@@ -20,8 +20,6 @@
                 location.href = "https" + location.href.substring(4)
             }
         }
-
-
     </script>
     <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
@@ -35,10 +33,10 @@
 
     <link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/4.1.1/animate.min.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Js/Tools.js"></script>
+    <script src="https://videocdn.isyour.love/videoSite/Js/Tools.js"></script>
     <style>
         body {
-            background-image: url(https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Image/bg.png);
+            background-image: url(https://videocdn.isyour.love/videoSite/Image/bg.png);
         }
     </style>
     
@@ -255,7 +253,7 @@
     <script src="https://cdn.staticfile.org/blueimp-md5/2.13.0/js/md5.min.js"></script>
     <!--video.js-->
     
-    <link href="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Js/video.js/video-js.min.css" rel="stylesheet" />
+    <link href="https://videocdn.isyour.love/videoSite/Js/video.js/video-js.min.css" rel="stylesheet" />
     <!--Googlead-->
     
 
@@ -273,7 +271,7 @@
 
 <div style="height:10%;display:none;" class="fullShow animate__animated animate__bounceInDown">
     <div style="">
-        <img src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Image/cinemaHeader.png" style="width:100%;height:100%;" />
+        <img src="https://videocdn.isyour.love/videoSite/Image/cinemaHeader.png" style="width:100%;height:100%;" />
     </div>
 </div>
 <video id="example_video_1"
@@ -293,7 +291,7 @@
 </video>
 
 <div style="height:20.1%;bottom:0px;left:0;right:0;position:absolute;z-index:2;display:none;" class="animate__animated animate__bounceInUp fullShow">
-    <img src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Image/cinema.png" style="width:100%;height:100%;" />
+    <img src="https://videocdn.isyour.love/videoSite/Image/cinema.png" style="width:100%;height:100%;" />
 </div>
 
 
@@ -306,7 +304,7 @@
                 <span id="menuClose" onclick='$("#menu").animateCss("fadeOutRightBig");' style="position:absolute;right:20px;top:7px;z-index:5;font-size:17px;cursor: pointer;color: rgb(92, 92, 92);">
                     <i class="bi bi-x" style="font-size: 1.5rem;"></i>
                 </span>
-                <div class="v-cloak" id="realY" style="background-image: url(https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Image/bg.png); background-attachment: local; padding-left:7px; position: absolute; left: 0px; right: 1px; top: 3px; border-radius: 10px; bottom: 20px; overflow-y: auto; padding-right: 5px;">
+                <div class="v-cloak" id="realY" style="background-image: url(https://videocdn.isyour.love/videoSite/Image/bg.png); background-attachment: local; padding-left:7px; position: absolute; left: 0px; right: 1px; top: 3px; border-radius: 10px; bottom: 20px; overflow-y: auto; padding-right: 5px;">
                     <div>
                         <div style="margin-top: 5px; color: black; font-size: 18px;float: left; margin-right: 10px;">
                             <i :style="{'color':showAll ? 'red':''}" v-on:click="showAll= !showAll;" class="bi bi-bullseye" style="font-size:1.2rem;"></i>
@@ -364,7 +362,7 @@
                             <div v-show="showLight3 || (items.light!=3)" class="searchitem" style="border: 1px solid rgb(197 197 197); box-shadow: 0 0 4px 0px #767676;">
                                 <div style="font-size: 16px;border-bottom: 1px solid rgb(226, 226, 226);position: relative;">
                                     <div style="overflow: hidden;position: absolute; bottom: 2px; top: 2px; left: 3px; width: 73px; background-size: 100% 100%; background-color: rgb(162 162 162); border-radius: 5px;">
-                                        <img :src="items.Img" referrerPolicy="no-referrer" style="width:100%;height:100%;" alt="海报" onerror="$(this).attr('src','https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Image/def.png')" />
+                                        <img :src="items.Img" referrerPolicy="no-referrer" style="width:100%;height:100%;" alt="海报" onerror="$(this).attr('src','https://videocdn.isyour.love/videoSite/Image/def.png')" />
                                     </div>
                                     <div style="padding: 3px;z-index: 10;overflow: hidden;margin-left: 77px;text-overflow: ellipsis;">
                                         <div>
@@ -580,7 +578,7 @@
             </div>
             <div class="modal-footer">
                 <a style="color: blue; left: 13px; position: absolute;">播放器错误反馈QQ：2847046608</a>
-                <button type="button" onclick='fetch(`/player/feedback?t=${$("#fkSearch").val()}&b=${$("#fkText").val()}`);alert("收到了，谢谢")' class="btn btn-primary" data-dismiss="modal">提交留言</button>
+                <button type="button" onclick='fetch("/player/feedback?t="+$("#fkSearch").val()+"&b="+ $("#fkText").val());alert("收到了，谢谢")' class="btn btn-primary" data-dismiss="modal">提交留言</button>
             </div>
         </div>
     </div>
@@ -591,19 +589,14 @@
     <script src="https://cdn.staticfile.org/masonry/4.2.2/masonry.pkgd.min.js"></script>
 
     
-    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn/videoSite/Js/video.js/video.2.min.js"></script>
+    <script src="https://videocdn.isyour.love/videoSite/Js/video.js/video.2.min.js"></script>
     <script src="https://cdn.staticfile.org/video.js/7.12.1/lang/zh-CN.min.js"></script>
 
     
-    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/cdn@22011902/videoSite/Js/MyPlayer.min.js"></script>
+    <script src="https://videocdn.isyour.love/videoSite/Js/MyPlayer.min.js"></script>
 
 
 
-
-
-
-    
-    
 
 
     <!-- 谷歌统计Google Analytics -->
@@ -621,7 +614,6 @@
         <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1279848754&web_id=1279848754"></script>
     </div>
     <!--谷歌AD-->
-    
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9882613937145097"
             crossorigin="anonymous"></script>
 
